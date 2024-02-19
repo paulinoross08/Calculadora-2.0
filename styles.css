@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial;
+    background-image: url(img/Boreals.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#calculadora{
+    width: 200px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+#display{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-content: flex-end;
+    align-items:center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    padding-right: 5px;
+}
+
+#displayInput{
+    text-align: center;
+    width: 100%;
+    border: none; 
+}
+
+#teclado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#apagar{
+    height: 40px;
+    width: 50px;
+    border-radius: 15%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    color: #F7931b;
+    
+}
+
+#apagar:hover{
+    color: #000000;
+}
+button{
+    height: 60px;
+    border: none;
+    font-size: 2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ccc6c6;
+}
+
+.num,.ponto, .igual{
+    color: #333;
+}
+
+.operador{
+    color: #F7931b;
+}
